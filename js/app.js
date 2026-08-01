@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* --- 1. COUNTDOWN TIMER --- */
 function initCountdown() {
-  const targetDate = new Date('2026-10-24T16:00:00').getTime();
+  const targetDate = new Date('2027-04-11T16:30:00').getTime();
 
   function updateTimer() {
     const now = new Date().getTime();
@@ -150,8 +150,8 @@ function initCalendarButtons() {
         'SUMMARY:' + title,
         'DESCRIPTION:¡Te esperamos para celebrar la boda de Belén & Néstor!',
         'LOCATION:' + location,
-        'DTSTART:20261024T193000Z',
-        'DTEND:20261025T080000Z',
+        'DTSTART:20270411T193000Z',
+        'DTEND:20270412T080000Z',
         'STATUS:CONFIRMED',
         'END:VEVENT',
         'END:VCALENDAR'
