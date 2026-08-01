@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Invitación de Boda de Belén & Néstor - 24 de Octubre de 2026. Ven a celebrar con nosotros en Estancia Los Olivos, Pilar, Buenos Aires.">
+  <meta name="theme-color" content="#6F7754">
+  <title>Belén & Néstor — Nuestra Boda</title>
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Belén & Néstor — Invitación de Boda">
+  <meta property="og:description" content="Te invitamos a celebrar nuestra boda el 24 de Octubre de 2026 en Estancia Los Olivos, Pilar.">
+  <meta property="og:image" content="assets/images/hero_couple.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236F7754'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z'/></svg>">
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Floating Navigation -->
+  <header class="header-nav" id="main-header">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">Belén<span>&</span>Néstor</a>
+      
+      <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Abrir Menú">
+        <span class="hamburger-line line-1"></span>
+        <span class="hamburger-line line-2"></span>
+        <span class="hamburger-line line-3"></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#welcome">Inicio</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#cronograma">Cronograma</a></li>
+        <li><a href="#dresscode">Dress Code</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+        <li><a href="#regalos">Regalos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="hero-overlay"></div>
+    
+    <!-- Botanical SVG Corner Decoration -->
+    <svg class="botanical-corner top-left" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 10C50 40 80 100 90 180M90 180C70 140 40 100 10 10M90 180C110 140 150 100 190 80" stroke="#6F7754" stroke-width="2" stroke-linecap="round"/>
+      <path d="M40 50C25 45 15 35 10 25C20 30 35 38 40 50Z" fill="#A7AE8B"/>
+      <path d="M65 90C48 88 35 78 28 66C38 72 53 80 65 90Z" fill="#6F7754"/>
+      <path d="M82 135C70 128 58 115 52 102C62 110 75 120 82 135Z" fill="#A7AE8B"/>
+    </svg>
+
+    <div class="hero-content fade-up">
+      <span class="hero-subtitle-top">Nos casamos</span>
+      <h1 class="hero-couple-names">Belén <span>&</span> Néstor</h1>
+      
+      <div class="botanical-divider">
+        <span class="line"></span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#C9A96A">
+          <path d="M12 2L14.5 9.5H22L16 14L18.5 21.5L12 17L5.5 21.5L8 14L2 9.5H9.5L12 2Z"/>
+        </svg>
+        <span class="line"></span>
+      </div>
+
+      <p class="hero-date">24 de Octubre de 2026</p>
+      <p class="hero-location">Estancia Los Olivos • Pilar, Buenos Aires</p>
+    </div>
+
+    <a href="#countdown" class="scroll-indicator" aria-label="Desplazarse hacia abajo">
+      <span>Descubre más</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M19 9l-7 7-7-7"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- 2. COUNTDOWN SECTION -->
+  <section class="countdown-section" id="countdown">
+    <div class="container">
+      <div class="countdown-grid fade-up">
+        <div class="countdown-card">
+          <div class="countdown-number" id="cd-days">00</div>
+          <div class="countdown-label">Días</div>
+        </div>
+        <div class="countdown-card">
+          <div class="countdown-number" id="cd-hours">00</div>
+          <div class="countdown-label">Horas</div>
+        </div>
+        <div class="countdown-card">
+          <div class="countdown-number" id="cd-minutes">00</div>
+          <div class="countdown-label">Minutos</div>
+        </div>
+        <div class="countdown-card">
+          <div class="countdown-number" id="cd-seconds">00</div>
+          <div class="countdown-label">Segundos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. WELCOME SECTION -->
+  <section class="section welcome-section" id="welcome">
+    <div class="container">
+      <div class="welcome-card fade-up">
+        <span class="subtitle-script">Bienvenidos a nuestra historia</span>
+        <h2 class="section-title">El Amor Comienza Aquí</h2>
+        
+        <div class="botanical-divider">
+          <span class="line"></span>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#6F7754" stroke-width="1.5">
+            <path d="M12 21C12 21 4 13.5 4 8.5C4 5.42 6.42 3 9.5 3C11.24 3 12.8 3.8 13.75 5.04C14.7 3.8 16.26 3 18 3C21.08 3 23.5 5.42 23.5 8.5C23.5 13.5 15.5 21 15.5 21H12Z"/>
+          </svg>
+          <span class="line"></span>
+        </div>
+
+        <p class="welcome-quote">
+          "El amor verdadero no se busca, se construye día a día con miradas, risas y sueños compartidos."
+        </p>
+
+        <p class="welcome-text">
+          Hay momentos únicos en la vida, y compartirlos con las personas que más queremos los vuelve inolvidables. 
+          Queremos que seas parte del día en que daremos el 'Sí, acepto' rodeados de naturaleza y buena compañía.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. EVENT INFORMATION -->
+  <section class="section events-section" id="eventos">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="subtitle-script">Detalles del gran día</span>
+        <h2 class="section-title">Dónde & Cuándo</h2>
+      </div>
+
+      <div class="events-grid">
+        <!-- Ceremony Card -->
+        <div class="event-card fade-up">
+          <div class="event-icon-wrapper">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z"/>
+            </svg>
+          </div>
+          <h3 class="event-title">Ceremonia</h3>
+          <p class="event-detail-item"><strong>Fecha:</strong> Sábado, 24 de Octubre de 2026</p>
+          <p class="event-detail-item"><strong>Hora:</strong> 16:30 HS (Puntual)</p>
+          <p class="event-detail-item"><strong>Lugar:</strong> Parroquia Nuestra Señora del Pilar</p>
+          <p class="event-detail-item"><strong>Dirección:</strong> Calle Lorenzo López 624, Pilar</p>
+          
+          <div class="event-actions">
+            <a href="https://maps.google.com/?q=Parroquia+Nuestra+Senora+del+Pilar+Buenos+Aires" target="_blank" rel="noopener" class="btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Abrir en Google Maps
+            </a>
+            <button class="btn-secondary add-to-calendar-btn" data-title="Boda Belén & Néstor - Ceremonia" data-location="Parroquia Nuestra Señora del Pilar, Pilar">
+              Añadir al Calendario
+            </button>
+          </div>
+        </div>
+
+        <!-- Reception Card -->
+        <div class="event-card fade-up">
+          <div class="event-icon-wrapper">
+            <svg viewBox="0 0 24 24">
+              <path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.46 3.9 3.45 4.35L5 22h2l.85-6h2.3L11 22h2l-1.45-8.65C13.54 12.9 15 11.12 15 9V2h-2v7h-2zM18 2v10h2v10h2V2h-4z"/>
+            </svg>
+          </div>
+          <h3 class="event-title">Fiesta & Recepción</h3>
+          <p class="event-detail-item"><strong>Fecha:</strong> Sábado, 24 de Octubre de 2026</p>
+          <p class="event-detail-item"><strong>Hora:</strong> 18:00 HS a 05:00 HS</p>
+          <p class="event-detail-item"><strong>Lugar:</strong> Estancia Los Olivos</p>
+          <p class="event-detail-item"><strong>Dirección:</strong> Ruta 8 Km 54.5, Pilar, Buenos Aires</p>
+          
+          <div class="event-actions">
+            <a href="https://maps.google.com/?q=Pilar+Buenos+Aires+Argentina" target="_blank" rel="noopener" class="btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Abrir en Google Maps
+            </a>
+            <button class="btn-secondary add-to-calendar-btn" data-title="Boda Belén & Néstor - Recepción" data-location="Estancia Los Olivos, Pilar">
+              Añadir al Calendario
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. TIMELINE -->
+  <section class="section timeline-section" id="cronograma">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="subtitle-script">Itinerario del evento</span>
+        <h2 class="section-title">Cronograma</h2>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Item 1 -->
+        <div class="timeline-item fade-up">
+          <div class="timeline-node">💍</div>
+          <div class="timeline-content">
+            <div class="timeline-time">16:30 HS</div>
+            <h3 class="timeline-title">Ceremonia Religiosa</h3>
+            <p>Bendición de anillos y votos matrimoniales en la parroquia.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item fade-up">
+          <div class="timeline-node">🥂</div>
+          <div class="timeline-content">
+            <div class="timeline-time">18:00 HS</div>
+            <h3 class="timeline-title">Cocktail al Atardecer</h3>
+            <p>Recepción en los jardines de la estancia con música en vivo y tragos de autor.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item fade-up">
+          <div class="timeline-node">🍖</div>
+          <div class="timeline-content">
+            <div class="timeline-time">20:30 HS</div>
+            <h3 class="timeline-title">Cena & Asado Criollo</h3>
+            <p>Banquete principal en el salón de fiesta con menú tradicional y vegetales a las brasas.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="timeline-item fade-up">
+          <div class="timeline-node">🎂</div>
+          <div class="timeline-content">
+            <div class="timeline-time">23:00 HS</div>
+            <h3 class="timeline-title">Corte de Torta & Mesa Dulce</h3>
+            <p>Brindis de los novios y mesa repleta de especialidades dulces y postres.</p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="timeline-item fade-up">
+          <div class="timeline-node">💃</div>
+          <div class="timeline-content">
+            <div class="timeline-time">00:00 HS</div>
+            <h3 class="timeline-title">Fiesta, Cumbia & Carioca</h3>
+            <p>Apertura de pista de baile, DJ en vivo, barra libre y cotillón até las 5 AM.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. DRESS CODE -->
+  <section class="section dress-code-section" id="dresscode">
+    <div class="container">
+      <div class="dress-code-card fade-up">
+        <span class="subtitle-script">Etiqueta sugerida</span>
+        <h2 class="dress-code-title">Elegante / Formale</h2>
+        
+        <p class="welcome-text">
+          Queremos que luzcan increíbles. Te sugerimos vestidos de fiesta (largos o midi) y trajes elegantes. 
+          Nuestra boda se inspira en tonos botánicos y cálidos:
+        </p>
+
+        <div class="swatches-container">
+          <div class="swatch-item">
+            <div class="swatch-circle" style="background-color: #6F7754;" title="Verde Olivo"></div>
+            <span class="swatch-label">Verde Olivo</span>
+          </div>
+          <div class="swatch-item">
+            <div class="swatch-circle" style="background-color: #A7AE8B;" title="Verde Sage"></div>
+            <span class="swatch-label">Sage</span>
+          </div>
+          <div class="swatch-item">
+            <div class="swatch-circle" style="background-color: #C9A96A;" title="Oro Suave"></div>
+            <span class="swatch-label">Oro Suave</span>
+          </div>
+          <div class="swatch-item">
+            <div class="swatch-circle" style="background-color: #E8DFC9;" title="Arena"></div>
+            <span class="swatch-label">Beige Arena</span>
+          </div>
+          <div class="swatch-item">
+            <div class="swatch-circle" style="background-color: #F8F5EF; border: 1px solid #C9A96A;" title="Marfil"></div>
+            <span class="swatch-label">Marfil</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. PHOTO GALLERY -->
+  <section class="section gallery-section" id="galeria">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="subtitle-script">Nuestros recuerdos</span>
+        <h2 class="section-title">Galería de Fotos</h2>
+      </div>
+
+      <div class="gallery-filters fade-up">
+        <button class="filter-btn active" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="pareja">Nosotros</button>
+        <button class="filter-btn" data-filter="lugar">La Estancia</button>
+        <button class="filter-btn" data-filter="detalles">Detalles</button>
+      </div>
+
+      <div class="gallery-grid fade-up" id="gallery-grid">
+        <div class="gallery-item" data-category="pareja" data-src="assets/images/hero_couple.png" data-caption="Belén & Néstor en los olivos">
+          <img src="assets/images/hero_couple.png" alt="Belén & Néstor" loading="lazy">
+          <div class="gallery-overlay">Belén & Néstor</div>
+        </div>
+        <div class="gallery-item" data-category="lugar" data-src="assets/images/gallery_venue.png" data-caption="Cena y luces en los jardines de la estancia">
+          <img src="assets/images/gallery_venue.png" alt="Estancia Los Olivos" loading="lazy">
+          <div class="gallery-overlay">Estancia Los Olivos</div>
+        </div>
+        <div class="gallery-item" data-category="detalles" data-src="assets/images/gallery_rings.png" data-caption="Anillos de boda y ramitas de olivo">
+          <img src="assets/images/gallery_rings.png" alt="Anillos de matrimonio" loading="lazy">
+          <div class="gallery-overlay">Nuestros Alianzas</div>
+        </div>
+        <div class="gallery-item" data-category="pareja" data-src="assets/images/gallery_moment.png" data-caption="Atardecer juntos">
+          <img src="assets/images/gallery_moment.png" alt="Belén & Néstor sonriendo" loading="lazy">
+          <div class="gallery-overlay">Juntos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">&times;</button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Anterior">&#10094;</button>
+    <button class="lightbox-next" id="lightbox-next" aria-label="Siguiente">&#10095;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightbox-img" class="lightbox-img">
+    </div>
+  </div>
+
+  <!-- 8. RSVP SECTION -->
+  <section class="section rsvp-section" id="rsvp">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="subtitle-script">Confirma tu asistencia</span>
+        <h2 class="section-title">RSVP</h2>
+      </div>
+
+      <div class="rsvp-card fade-up">
+        <form id="rsvp-form">
+          <div class="form-group">
+            <label class="form-label" for="guest-name">Nombre y Apellido *</label>
+            <input type="text" id="guest-name" class="form-input" placeholder="Ej: María Belén Gómez" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="guest-attendance">¿Nos acompañás? *</label>
+            <select id="guest-attendance" class="form-select" required>
+              <option value="" disabled selected>Seleccioná una opción</option>
+              <option value="asistira">¡Sí, voy a estar ahí de fiesta!</option>
+              <option value="no_asistira">Lamentablemente no voy a poder ir</option>
+            </select>
+          </div>
+
+          <div class="form-group" id="group-guests-count">
+            <label class="form-label" for="guest-count">Cantidad de Invitados (+1)</label>
+            <select id="guest-count" class="form-select">
+              <option value="1">1 Persona</option>
+              <option value="2">2 Personas (+Acompañante)</option>
+              <option value="3">3 Personas</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Preferencias Alimentarias / Menú Especial</label>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="diet" value="Vegetariano"> Vegetariano
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="diet" value="Vegano"> Vegano
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="diet" value="Celíaco"> Celíaco / Sin TACC
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="diet" value="Hipertensión"> Bajo en Sodio
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="song-request">Canción Infaltable en la Pista 🎶</label>
+            <input type="text" id="song-request" class="form-input" placeholder="Canción y artista que querés escuchar">
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">
+            Confirmar Asistencia
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. GIFT SECTION -->
+  <section class="section gift-section" id="regalos">
+    <div class="container">
+      <div class="gift-card fade-up">
+        <span class="subtitle-script">Tu presencia es nuestro mejor regalo</span>
+        <h2 class="section-title">Regalos & Luna de Miel</h2>
+        
+        <p class="welcome-text" style="margin-top: 1.5rem;">
+          Lo más importante para nosotros es contar con tu presencia. Si querés realizarnos un regalo para nuestra luna de miel y nuevo hogar, podés hacerlo por transferencia bancaria o en el buzón de la fiesta.
+        </p>
+
+        <button class="btn-primary" id="open-gift-modal" style="margin-top: 2rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="8" width="18" height="12" rx="2"></rect>
+            <path d="M12 8V20"></path>
+            <path d="M19.5 5.5c0 1.93-1.57 3.5-3.5 3.5H12V5.5c0-1.93 1.57-3.5 3.5-3.5s3.5 1.57 3.5 3.5z"></path>
+            <path d="M4.5 5.5C4.5 3.57 6.07 2 8 2s3.5 1.57 3.5 3.5V9H8C6.07 9 4.5 7.43 4.5 5.5z"></path>
+          </svg>
+          Ver Datos Bancarios (CBU / Alias)
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bank Details Modal -->
+  <div class="modal-overlay" id="gift-modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" id="close-gift-modal">&times;</button>
+      <span class="subtitle-script">Datos Bancarios</span>
+      <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Belén & Néstor</h3>
+      
+      <div class="bank-detail-box">
+        <div class="bank-row">
+          <span>Banco:</span>
+          <strong>Banco Galicia (Argentina)</strong>
+        </div>
+        <div class="bank-row">
+          <span>Titular:</span>
+          <strong>Belén & Néstor Boda</strong>
+        </div>
+        <div class="bank-row">
+          <span>CBU:</span>
+          <strong id="cbu-text">0070123430004567890123</strong>
+          <button class="btn-copy" data-copy="0070123430004567890123">Copiar</button>
+        </div>
+        <div class="bank-row">
+          <span>Alias:</span>
+          <strong id="alias-text">BODA.BELEN.NESTOR</strong>
+          <button class="btn-copy" data-copy="BODA.BELEN.NESTOR">Copiar</button>
+        </div>
+      </div>
+
+      <p style="font-size: 0.88rem; color: var(--color-olive);">¡Muchísimas gracias por acompañarnos en este hermoso camino!</p>
+    </div>
+  </div>
+
+  <!-- 10. MUSIC & SPOTIFY -->
+  <section class="section music-section" id="musica">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="subtitle-script">Música & Ambiente</span>
+        <h2 class="section-title">Playlist de la Boda</h2>
+      </div>
+
+      <div class="music-container fade-up" style="text-align: center;">
+        <p style="margin-bottom: 1.5rem;">Escuchá las canciones que nos inspiran y agregá la tuya a la pista de baile.</p>
+        <iframe style="border-radius:16px;" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4sWSpwq3LiO?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. INSTAGRAM & HASHTAG -->
+  <section class="section social-section" id="social">
+    <div class="container">
+      <div class="welcome-card fade-up" style="max-width: 650px;">
+        <span class="subtitle-script">Compartí la fiesta</span>
+        <h2 class="section-title" style="margin-bottom: 1rem;">#BelenYNestor2026</h2>
+        <p class="welcome-text">
+          Etiquetá tus fotos y videos en Instagram con nuestro hashtag oficial para que podamos revivir todos los momentos juntos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <h2 class="footer-names">Belén & Néstor</h2>
+      <p class="footer-text">¡Gracias por celebrar el amor con nosotros!</p>
+      
+      <div class="footer-divider"></div>
+
+      <p class="footer-copyright">
+        &copy; 2026 Belén & Néstor • Diseñado con elegancia botánica
+      </p>
+    </div>
+  </footer>
+
+  <!-- Floating Audio Player Button -->
+  <button class="floating-music-btn" id="floating-audio-toggle" aria-label="Reproducir / Pausar Música de Fondo">
+    <div class="music-waves">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </button>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast-message">Copiado al portapapeles</div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/app.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/rsvp.js"></script>
+  <script src="js/music.js"></script>
+
+</body>
+</html>
