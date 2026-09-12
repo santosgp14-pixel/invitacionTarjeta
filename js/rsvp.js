@@ -13,14 +13,28 @@ function initRSVPForm() {
 
   if (!form) return;
 
+  const guestCountSelect = document.getElementById('guest-count');
+  const companionNameGroup = document.getElementById('group-companion-name');
+
   // Toggle guest count visibility based on attendance choice
   if (attendanceSelect && guestsCountGroup) {
     attendanceSelect.addEventListener('change', () => {
       if (attendanceSelect.value === 'no_asistira') {
         guestsCountGroup.style.display = 'none';
+        if (companionNameGroup) companionNameGroup.style.display = 'none';
       } else {
         guestsCountGroup.style.display = 'block';
+        if (companionNameGroup && guestCountSelect) {
+           companionNameGroup.style.display = guestCountSelect.value === '2' ? 'block' : 'none';
+        }
       }
+    });
+  }
+
+  // Toggle companion name visibility based on guest count choice
+  if (guestCountSelect && companionNameGroup) {
+    guestCountSelect.addEventListener('change', () => {
+      companionNameGroup.style.display = guestCountSelect.value === '2' ? 'block' : 'none';
     });
   }
 
@@ -51,6 +65,7 @@ function initRSVPForm() {
     const name = document.getElementById('guest-name').value.trim();
     const attendance = document.getElementById('guest-attendance').value;
     const count = attendance === 'no_asistira' ? 0 : parseInt(document.getElementById('guest-count').value, 10);
+    const companionName = count === 2 && document.getElementById('companion-name') ? document.getElementById('companion-name').value.trim() : '';
     const song = document.getElementById('song-request').value.trim();
 
     // Collect checked dietary preferences
@@ -68,10 +83,16 @@ function initRSVPForm() {
       return;
     }
 
+    if (count === 2 && !companionName) {
+      showToast('Por favor, indica el nombre de tu acompañante');
+      return;
+    }
+
     const rsvpData = {
       name,
       attendance,
       count,
+      companionName,
       dietary: checkedDiets,
       song,
       timestamp: new Date().toISOString()
@@ -108,7 +129,7 @@ function renderConfirmationState(data) {
 
       <p style="font-size: 1.1rem; color: var(--color-olive); margin-bottom: 1.5rem;">
         ${isAttending 
-          ? `Hemos confirmado tu asistencia para <strong>${data.count} ${data.count === 1 ? 'persona' : 'personas'}</strong>. ¡Nos llena de alegría celebrar juntos!`
+          ? `Hemos confirmado tu asistencia para <strong>${data.count} ${data.count === 1 ? 'persona' : 'personas'}</strong>${data.count === 2 && data.companionName ? ` (junto a ${escapeHtml(data.companionName)})` : ''}. ¡Nos llena de alegría celebrar juntos!`
           : 'Lamentamos que no puedas acompañarnos, pero agradecemos profundamente tu mensaje.'}
       </p>
 

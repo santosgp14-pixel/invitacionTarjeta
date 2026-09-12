@@ -150,8 +150,8 @@ function initCalendarButtons() {
         'SUMMARY:' + title,
         'DESCRIPTION:¡Te esperamos para celebrar la boda de Belén & Néstor!',
         'LOCATION:' + location,
-        'DTSTART:20270411T193000Z',
-        'DTEND:20270412T080000Z',
+        'DTSTART:20270411T150000Z',
+        'DTEND:20270411T230000Z',
         'STATUS:CONFIRMED',
         'END:VEVENT',
         'END:VCALENDAR'

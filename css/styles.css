@@ -148,12 +148,20 @@ img {
 }
 
 .section-title {
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-size: clamp(1.5rem, 6vw, 3.2rem);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--color-olive-dark);
   position: relative;
   display: inline-block;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.hashtag-title {
+  font-size: clamp(1.1rem, 4.5vw, 2.5rem);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
 }
 
 .section-title::after {
@@ -1323,6 +1331,9 @@ img {
 }
 
 @media (max-width: 576px) {
+  .welcome-card, .rsvp-card, .gift-card, .dress-code-card, .event-card {
+    padding: 2.5rem 1.2rem;
+  }
   .modal-box {
     padding: 2rem 1.2rem;
   }

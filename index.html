@@ -213,6 +213,11 @@
             </select>
           </div>
 
+          <div class="form-group" id="group-companion-name" style="display: none; margin-top: 1rem;">
+            <label class="form-label" for="companion-name">Nombre del Acompañante</label>
+            <input type="text" id="companion-name" class="form-input" placeholder="Ej: Juan Pérez">
+          </div>
+
           <div class="form-group">
             <label class="form-label">Preferencias Alimentarias / Menú Especial</label>
             <div class="checkbox-group">
@@ -303,12 +308,40 @@
 
 
 
+  <!-- 10. PHOTO ALBUM -->
+  <section class="section photo-album-section" id="fotos">
+    <div class="container">
+      <div class="welcome-card fade-up" style="max-width: 650px;">
+        <span class="subtitle-script">Captura los momentos</span>
+        <h2 class="section-title" style="margin-bottom: 1rem;">Álbum de Fotos</h2>
+        <p class="welcome-text">
+          Ayudanos a guardar cada recuerdo. Escaneá el código QR o hacé clic en el botón para subir las fotos y videos que tomes durante la fiesta a nuestro álbum compartido.
+        </p>
+        
+        <div style="margin: 2rem auto; text-align: center;">
+          <div style="width: 180px; height: 180px; margin: 0 auto 1.5rem auto; border: 2px dashed var(--color-gold); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; background: #fff; box-shadow: var(--glass-shadow);">
+            <!-- Cuando el usuario tenga el QR, puede reemplazar este span por una etiqueta <img> -->
+            <span style="color: var(--color-olive); font-size: 0.9rem; font-weight: 500;">(Pegar aquí tu imagen QR)</span>
+          </div>
+          <a href="#" target="_blank" class="btn-primary" id="drive-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="17 8 12 3 7 8"></polyline>
+              <line x1="12" y1="3" x2="12" y2="15"></line>
+            </svg>
+            Subir Fotos al Drive
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- 11. INSTAGRAM & HASHTAG -->
   <section class="section social-section" id="social">
     <div class="container">
       <div class="welcome-card fade-up" style="max-width: 650px;">
         <span class="subtitle-script">Compartí la fiesta</span>
-        <h2 class="section-title" style="margin-bottom: 1rem;">#BelenYNestor2027</h2>
+        <h2 class="section-title hashtag-title" style="margin-bottom: 1rem;">#BelenYNestor2027</h2>
         <p class="welcome-text">
           Etiquetá tus fotos y videos en Instagram con nuestro hashtag oficial para que podamos revivir todos los momentos juntos.
         </p>
