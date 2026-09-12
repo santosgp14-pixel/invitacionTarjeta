@@ -24,6 +24,15 @@ function initRSVPForm() {
     });
   }
 
+  const dietOtherCheckbox = document.getElementById('diet-other-checkbox');
+  const dietOtherContainer = document.getElementById('diet-other-container');
+
+  if (dietOtherCheckbox && dietOtherContainer) {
+    dietOtherCheckbox.addEventListener('change', () => {
+      dietOtherContainer.style.display = dietOtherCheckbox.checked ? 'block' : 'none';
+    });
+  }
+
   // Check if guest already responded previously in localStorage
   const savedResponse = localStorage.getItem('wedding_rsvp_submission');
   if (savedResponse) {
@@ -46,7 +55,13 @@ function initRSVPForm() {
 
     // Collect checked dietary preferences
     const checkedDiets = Array.from(document.querySelectorAll('input[name="diet"]:checked'))
-      .map(cb => cb.value);
+      .map(cb => {
+        if (cb.value === 'Alergico') {
+          const details = document.getElementById('diet-other-input') ? document.getElementById('diet-other-input').value.trim() : '';
+          return details ? `Alérgico/Otro: ${details}` : 'Otro (alérgico)';
+        }
+        return cb.value;
+      });
 
     if (!name || !attendance) {
       showToast('Por favor completa todos los campos obligatorios');

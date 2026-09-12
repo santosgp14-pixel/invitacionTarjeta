@@ -120,7 +120,7 @@ function initScrollAnimations() {
       if (entry.isIntersecting) {
         setTimeout(() => {
           entry.target.classList.add('visible');
-        }, index * 100);
+        }, index * 150);
         obs.unobserve(entry.target);
       }
     });
@@ -140,7 +140,7 @@ function initCalendarButtons() {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const title = btn.getAttribute('data-title') || 'Boda Belén & Néstor';
-      const location = btn.getAttribute('data-location') || 'Estancia Los Olivos, Pilar';
+      const location = btn.getAttribute('data-location') || 'Ballroom Eventos, CABA, Flores';
 
       const icsData = [
         'BEGIN:VCALENDAR',
